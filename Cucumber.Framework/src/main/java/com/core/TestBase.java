@@ -50,4 +50,11 @@ public class TestBase {
 	}
 	
 	
+	public WebElement waitForElementPresent1(By xpath) {
+		
+		WebDriverWait wait=new WebDriverWait(driver, 20);
+		return wait.until(ExpectedConditions.presenceOfElementLocated(xpath));
+}
+
+	
 }
